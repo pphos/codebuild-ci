@@ -11,6 +11,7 @@ CodeBuildとGitHubを連携したCIのサンプルリポジトリです.
 5. SNSがユーザのメールアドレスにCodeBuildの処理結果を通知する
 
 ## 開発要件
+- jq
 - git
 - aws cli
 - docker
