@@ -1,13 +1,13 @@
 version: '0.2'
 
 phases:
-  pre_build:
-    - docker-compose up -d
   build:
-    - docker-compose app pipenv --three
-    - docker-compose app pipenv install
-    - docker-compose app pipenv install --dev
-    - docker-compose app pipenv run pytest --junitxml='pytest-log.xml'
+    commands:
+      - docker-compose up -d
+      - docker-compose app pipenv --three
+      - docker-compose app pipenv install
+      - docker-compose app pipenv install --dev
+      - docker-compose app pipenv run pytest --junitxml='pytest-log.xml'
 
 reports:
   pytest_reports:
@@ -15,4 +15,3 @@ reports:
       - 'pytest.log.xml'
     base-directory: '.'
     file-format: JUNITXML
-
