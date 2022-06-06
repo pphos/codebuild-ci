@@ -5,6 +5,10 @@ def test_add():
     assert IntCalculator(1, 2).add() == 3
 
 
+def test_add2():
+    assert IntCalculator(2, 3).add() == 5
+
+
 def test_subtract():
     return IntCalculator(1, 2).subtract() == -1
 
