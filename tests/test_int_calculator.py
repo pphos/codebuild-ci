@@ -13,6 +13,10 @@ def test_subtract():
     return IntCalculator(1, 2).subtract() == -1
 
 
+def test_subtract2():
+    return IntCalculator(2, 1).subtract() == 1
+
+
 def test_multiply():
     return IntCalculator(2, 3).multiply() == 6
 
