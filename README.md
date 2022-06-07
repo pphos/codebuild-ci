@@ -41,7 +41,7 @@ CodeBuildとGitHubを連携したCIのサンプルリポジトリです.
       },
       {
         "key": "StartBuildPattern",
-        "value": "^refs/heads/release-+"
+        "value": "^refs/heads/main$"
       },
       {
         "key": "EmailAddress",
